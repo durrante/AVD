@@ -23,7 +23,7 @@ $Firefox = Get-EvergreenApp -Name MozillaFirefox | Where-Object { $_.Architectur
 $FirefoxInstaller = $Firefox | Save-EvergreenApp -Path "C:\Temp\Firefox"
 
 # Install Firefox
-"$env:SystemRoot\System32\msiexec.exe" "/package $($FirefoxInstaller.FullName) /quiet"
+Start-Process -FilePath msiexec.exe -Args "/I ""$FirefoxInstaller"" /quiet" -Wait -Verbose
 
 # Cleanup temp directory
-$FirefoxInstaller | Remove-Item -Force -Recurve -ErrorAction SilentlyContinue
+$FirefoxInstaller | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue
