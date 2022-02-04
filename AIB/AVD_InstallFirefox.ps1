@@ -20,5 +20,9 @@ ElseIf ([System.Version]$Published.Version -gt [System.Version]$Installed.Versio
 
 # Download Latest version of Firefox via Evergreen
 $Firefox = Get-EvergreenApp -Name MozillaFirefox | Where-Object { $_.Architecture -eq "x64" -and $_.Channel -eq "LATEST_FIREFOX_VERSION" -and $_.Type -eq "msi"}
-$FireFoxInstaller = Split-Path -Path $Firefox.Uri -Leaf
-Invoke-WebRequest -Uri $Firefox.Uri -OutFile ".\$FirefoxInstaller" -UseBasicParsing
+$FirefoxInstaller = $Teams | Save-EvergreenApp -Path "C:\Temp\Firefox"
+
+# Install Firefox
+"$env:SystemRoot\System32\msiexec.exe" "/package $($FirefoxInstaller.FullName) /quiet"
+
+# Cleanup temp directory
