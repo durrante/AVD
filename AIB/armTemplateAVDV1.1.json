@@ -58,7 +58,7 @@
                         "name": "InstallVisualStudioforOffice",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_InstallVisualStudioforOffice.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallVisualStudioforOffice.ps1"
                     },
                     {
                         "type": "PowerShell",
@@ -92,7 +92,7 @@
                         "name": "OptimiseOS",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_OptimisationScript.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_OptimisationScript.ps1"
                     },
                     {
                         "type": "PowerShell",
@@ -111,7 +111,7 @@
                         "name": "FixSysPrep",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_SysprepFix.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_SysprepFix.ps1"
                     },   
                     {
                         "type": "WindowsUpdate",
