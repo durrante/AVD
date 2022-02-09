@@ -53,6 +53,8 @@
                     "version": "latest"
             },
             "customize": [
+
+        
                     {
                         "type": "PowerShell",
                         "name": "InstallVisualStudioforOffice",
