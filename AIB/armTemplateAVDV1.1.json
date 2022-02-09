@@ -75,14 +75,14 @@
                         "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_RemoveAppxPackages.ps1"
                     },
                         "type": "PowerShell",
-                        "name": "SetStartMenu",
+                        "name": "SetStartMenuLayout",
                         "runElevated": true,
                         "runAsSystem": true,
                         "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_StartMenuLayout.ps1"
                     },
                     {
                         "type": "PowerShell",
-                        "name": "OptimizeOS",
+                        "name": "OptimiseOS",
                         "runElevated": true,
                         "runAsSystem": true,
                         "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_OptimisationScript.ps1"
