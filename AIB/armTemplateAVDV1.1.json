@@ -69,13 +69,6 @@
                     },
                     {
                         "type": "PowerShell",
-                        "name": "RemoveAppxPackages",
-                        "runElevated": true,
-                        "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_RemoveAppxPackages.ps1"
-                    },
-                    {
-                        "type": "PowerShell",
                         "name": "SetStartMenuLayout",
                         "runElevated": true,
                         "runAsSystem": true,
@@ -87,6 +80,13 @@
                         "runElevated": true,
                         "runAsSystem": true,
                         "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_OptimisationScript.ps1"
+                    },
+                    {
+                        "type": "PowerShell",
+                        "name": "RemoveAppxPackages",
+                        "runElevated": true,
+                        "runAsSystem": true,
+                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_RemoveAppxPackages.ps1"
                     },
                     {
                         "type": "WindowsRestart",
