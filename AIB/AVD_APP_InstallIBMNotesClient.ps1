@@ -12,7 +12,7 @@
  $outputPath = $LocalPath + '\' + $IBMNotesClientexe
  Invoke-WebRequest -Uri $IBMNotesClientURL -OutFile $outputPath
  write-host 'AIB Customization: Starting Install of IBM Notes Client'
- Start-Process -FilePath $outputPath -Args "/s /v"SETMULTIUSER=1 /qn /norestart" -Wait
+ Start-Process -FilePath $outputPath -Args "/s /v SETMULTIUSER=1 /qn /norestart" -Wait
  write-host 'AIB Customization: Finished Installation of IBM Notes Client'
 
 # Cleanup temp directory
