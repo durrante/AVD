@@ -1,4 +1,4 @@
-## Installs latest version of IBM Notes from Synthomers Storage Account via PowerShell
+## Installs latest version of IBM Notes from Azure Storage Account via PowerShell
 
  # Download and install IBM Notes Client
  write-host 'AIB Customization: Downloading IBM Notes Client'
