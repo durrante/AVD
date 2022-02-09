@@ -68,6 +68,13 @@
                         "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallIBMNotesClient.ps1"
                     },
                     {
+                        "type": "PowerShell",
+                        "name": "InstallSAP",
+                        "runElevated": true,
+                        "runAsSystem": true,
+                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallSAP2021.ps1"
+                    },
+                    {
                         "type": "File",
                         "name": "CopyStartMenuXML",
                         "sourceUri": "https://letsconfigmgr998.blob.core.windows.net/applications/Windows%20Customisations/Start%20Menu%20Layout/startlayout.xml"
