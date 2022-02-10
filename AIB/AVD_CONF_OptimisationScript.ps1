@@ -12,12 +12,12 @@
  write-host 'AIB Customization: Starting OS Optimizations script'
  Expand-Archive -LiteralPath 'C:\\Optimize\\Windows_10_VDI_Optimize-master.zip' -DestinationPath $Localpath -Force -Verbose
  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force -Verbose
- Set-Location -Path C:\\Optimize\\Virtual-Desktop-Optimization-Tool-main
+ Set-Location -Path C:\\Optimize\\Virtual-Desktop-Optimization-Tool-main -Verbose
  
  # instrumentation
  $osOptURL = 'https://raw.githubusercontent.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool/main/Win10_VirtualDesktop_Optimize.ps1'
  $osOptURLexe = 'optimize.ps1'
- Invoke-WebRequest -Uri $osOptURL -OutFile $osOptURLexe
+ Invoke-WebRequest -Uri $osOptURL -OutFile $osOptURLexe -Verbose
  
  
  
