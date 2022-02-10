@@ -79,7 +79,7 @@
                     {
                         "type": "File",
                         "name": "CopyStartMenuXML",
-                        "sourceUri": "https://letsconfigmgr998.blob.core.windows.net/applications/Windows%20Customisations/Start%20Menu%20Layout/startlayout.xml"
+                        "sourceUri": "https://letsconfigmgr998.blob.core.windows.net/applications/Windows%20Customisations/Start%20Menu%20Layout/startlayout.xml",
                         "destination":"c:\\Temp\\startlayout.xml"
                     },
                     {
