@@ -1,1 +1,1 @@
-Import-StartLayout -LayoutPath c:\\windows\\temp\\startmenu.xml -MountPath $env:SystemDrive\
+Import-StartLayout -LayoutPath c:\\windows\\temp\\startlayout.xml -MountPath $env:SystemDrive\
