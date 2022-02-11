@@ -99,7 +99,7 @@
                     {
                         "type": "WindowsRestart",
                         "restartCheckCommand": "write-host 'restarting post Optimisations'",
-                        "restartTimeout": "5m"
+                        "restartTimeout": "10m"
                     },
                     {
                         "type": "PowerShell",
