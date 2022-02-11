@@ -80,7 +80,7 @@
                         "type": "File",
                         "name": "CopyStartMenuXML",
                         "sourceUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_FILE_startlayout.xml",
-                        "destination": "c:\\Temp\\startlayout.xml"
+                        "destination": "c:\\windows\\temp\\startlayout.xml"
                     },
                     {
                         "type": "PowerShell",
