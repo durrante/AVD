@@ -126,11 +126,17 @@
                     "galleryImageId": "/subscriptions/<subscriptionID>/resourceGroups/<rgName>/providers/Microsoft.Compute/galleries/<sharedImageGalName>/images/<imageDefName>",
                     "runOutputName": "<runOutputName>",
                     "artifactTags": {
-                        "source": "wvd10",
-                        "baseosimg": "windows10"
+                        "source": "avd10",
+                        "baseosimg": "Windows10Multi",
+                        "ApplicationName": "AVD",
+                        "BusinessUnit": "Shared",
+                        "Env": "Prod",
+                        "DR": "Essential",
+                        "Owner": "Alex.Durrant@email.com"
                     },
+                    "excludeFromLatest": true,
                     "replicationRegions": [
-                      "<region1>"
+                      "<regions>"
 
                     ]
                 }
