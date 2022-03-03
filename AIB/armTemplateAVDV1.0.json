@@ -81,6 +81,26 @@
                         "runAsSystem": true,
                         "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallVisualStudioforOffice.ps1"
                     }, 
+                                    {
+                        "type": "File",
+                        "name": "CopyStartMenuXML",
+                        "sourceUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_FILE_startlayout.xml",
+                        "destination": "c:\\windows\\temp\\startlayout.xml"
+                    },
+                    {
+                        "type": "PowerShell",
+                        "name": "SetStartMenuLayout",
+                        "runElevated": true,
+                        "runAsSystem": true,
+                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_StartMenuLayout.ps1"
+                    },
+                    {
+                        "type": "PowerShell",
+                        "name": "RemoveAppxPackages",
+                        "runElevated": true,
+                        "runAsSystem": true,
+                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_RemoveAppxPackages.ps1"
+                    },
                     {
                         "type": "WindowsUpdate",
                         "searchCriteria": "IsInstalled=0",
