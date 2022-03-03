@@ -60,7 +60,7 @@
                         "name": "installChrome",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_InstallChrome.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallChrome.ps1"
                     },
                     {
                         "type": "WindowsRestart",
@@ -72,14 +72,14 @@
                         "name": "InstallFirefox",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_InstallFirefox.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallFirefox.ps1"
                     },
                     {
                         "type": "PowerShell",
                         "name": "InstallVisualStudioforOffice",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_InstallVisualStudioforOffice.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallVisualStudioforOffice.ps1"
                     }, 
                     {
                         "type": "WindowsUpdate",
