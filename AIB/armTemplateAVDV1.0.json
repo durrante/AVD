@@ -63,13 +63,6 @@
                         "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_InstallChrome.ps1"
                     },
                     {
-                        "type": "PowerShell",
-                        "name": "OptimizeOS",
-                        "runElevated": true,
-                        "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_OptimisationScript.ps1"
-                    },
-                    {
                         "type": "WindowsRestart",
                         "restartCheckCommand": "write-host 'restarting post Optimisations'",
                         "restartTimeout": "5m"
@@ -87,14 +80,7 @@
                         "runElevated": true,
                         "runAsSystem": true,
                         "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_InstallVisualStudioforOffice.ps1"
-                    },
-                    {
-                        "type": "PowerShell",
-                        "name": "FixSysPrep",
-                        "runElevated": true,
-                        "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_SysprepFix.ps1"
-                    },   
+                    }, 
                     {
                         "type": "WindowsUpdate",
                         "searchCriteria": "IsInstalled=0",
