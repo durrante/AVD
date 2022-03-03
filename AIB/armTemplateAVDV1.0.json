@@ -103,7 +103,7 @@
                         "baseosimg": "windows10"
                     },
                     "replicationRegions": [
-                      "<region1>"
+                      "<regions>"
 
                     ]
                 }
