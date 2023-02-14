@@ -18,10 +18,8 @@
         "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read"
       ],
       "notDataActions": []
-    }
-  ],
+    ],
     "AssignableScopes": [
       "/subscriptions/<subscriptionID>/resourceGroups/<rgName>"
     ]
   }
-
