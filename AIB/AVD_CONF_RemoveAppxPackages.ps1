@@ -35,7 +35,6 @@ Begin {
         "Microsoft.DesktopAppInstaller",
         "Microsoft.Windows.Photos",
         "Microsoft.MicrosoftStickyNotes",
-        "Microsoft.WindowsAlarms",
         "Microsoft.WindowsCalculator",
         "Microsoft.StorePurchaseApp"        
     ))
@@ -49,12 +48,16 @@ Begin {
         "Microsoft.WebpImageExtension"
     ))
 
-    # Synthomer Specific
+    # LCM Specific
     $WhiteListedApps.AddRange(@(
         "Microsoft.MicrosoftEdge.Stable",
         "Microsoft.People",
         "Microsoft.WindowsCamera",
-        "Microsoft.WindowsSoundRecorder"
+        "Microsoft.WindowsSoundRecorder",
+        "Microsoft.WindowsNotepad",
+        "Microsoft.WindowsTerminal",
+        "Microsoft.Todos",
+        "Microsoft.WindowsStore"
     ))
 
     
