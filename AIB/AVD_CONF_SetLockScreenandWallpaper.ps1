@@ -8,7 +8,7 @@ New-Item HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\PersonalizationCSP -For
 $RegPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\PersonalizationCSP"
 $BackgroundImageURL = 'https:\\yourimageurl'
 $LockscreenImageURL = 'https:\\yourimageurl'
-$ImageDestinationFolder = "c:\intune"
+$ImageDestinationFolder = "c:\Images"
 $Backgroundimage = "$ImageDestinationFolder\background.jpg"
 $LockScreenImage = "$ImageDestinationFolder\LockScreen.jpg"
 
