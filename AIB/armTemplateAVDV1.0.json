@@ -129,7 +129,23 @@
                         "runElevated": true,
                         "runAsSystem": true,
                         "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_SysprepFix.ps1"
-                    },   
+                    },
+                    {
+                        "type": "PowerShell",
+                        "name": "DeleteCTemp",
+                        "runElevated": true,
+                        "inline": [
+                            "Remove-Item -Path 'C:\\Temp' -Recurse -Force",
+                        ]
+                    },
+                    {
+                        "type": "PowerShell",
+                        "name": "DeletePublicShortcuts",
+                        "runElevated": true,
+                        "inline": [
+                            "Remove-Item -Path 'C:\\Users\\Public\\Desktop' -Recurse -Force",
+                        ]
+                    },     
                     {
                         "type": "WindowsUpdate",
                         "searchCriteria": "IsInstalled=0",
