@@ -7,14 +7,19 @@
         "Microsoft.Compute/galleries/images/read",
         "Microsoft.Compute/galleries/images/versions/read",
         "Microsoft.Compute/galleries/images/versions/write",
-
+        "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action"
         "Microsoft.Compute/images/write",
         "Microsoft.Compute/images/read",
         "Microsoft.Compute/images/delete"
     ],
-    "NotActions": [
-  
-    ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read"
+      ],
+      "notDataActions": []
+    }
+  ],
     "AssignableScopes": [
       "/subscriptions/<subscriptionID>/resourceGroups/<rgName>"
     ]
