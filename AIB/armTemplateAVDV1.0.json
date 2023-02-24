@@ -60,63 +60,76 @@
                         "name": "installChrome",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallChrome.ps1"
+                        "scriptUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Applications/GoogleChrome/AVD_APP_InstallChrome.ps1"
                     },
                     {
                         "type": "PowerShell",
                         "name": "InstallFirefox",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallFirefox.ps1"
+                        "scriptUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Applications/MozillaFireFox/AVD_APP_InstallFirefox.ps1"
                     },
                     {
                         "type": "PowerShell",
                         "name": "InstallVisualStudioCode",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallVSCode.ps1"
+                        "scriptUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Applications/VSCode/AVD_APP_InstallVSCode.ps1"
                     }, 
                     {
                         "type": "PowerShell",
                         "name": "InstallNotePadPlusPlus",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallNotePadPlusPlus.ps1"
+                        "scriptUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Applications/NotePadPlusPlus/AVD_APP_InstallNotePadPlusPlus.ps1"
                     }, 
                     {
                         "type": "PowerShell",
                         "name": "InstallVCE",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallVCE.ps1"
+                        "scriptUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Applications/VCE/AVD_APP_InstallVCE.ps1"
                     }, 
                     {
                         "type": "PowerShell",
                         "name": "Install7Zip",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_Install7Zip.ps1"
+                        "scriptUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Applications/7-Zip/AVD_APP_Install7Zip.ps1"
                     }, 
                     {
                         "type": "PowerShell",
                         "name": "InstallAdobeReaderDC",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_APP_InstallAdobeReaderDC.ps1"
+                        "scriptUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Applications/AdobeReaderDC/AVD_APP_InstallAdobeReaderDC.ps1"
                     }, 
+                    {
+                        "type": "File",
+                        "name": "CopyStartMenuXML",
+                        "sourceUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Scripts/AVD_FILE_startlayout.xml",
+                        "destination": "c:\\windows\\temp\\startlayout.xml"
+                    },
                     {
                         "type": "PowerShell",
                         "name": "SetStartMenuLayout",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_StartMenuLayout.ps1"
+                        "scriptUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Scripts/AVD_CONF_StartMenuLayout.ps1"
                     },
                     {
                         "type": "PowerShell",
                         "name": "RemoveAppxPackages",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_RemoveAppxPackages.ps1"
+                        "scriptUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Scripts/AVD_CONF_RemoveAppxPackages.ps1"
+                    },
+                    {
+                        "type": "PowerShell",
+                        "name": "SetWallpaperandLockscreen",
+                        "runElevated": true,
+                        "runAsSystem": true,
+                        "scriptUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Scripts/AVD_CONF_SetWallpaperandLockscreen.ps1"
                     },
                     {
                         "type": "WindowsRestart",
@@ -128,7 +141,7 @@
                         "name": "FixSysPrep",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "https://raw.githubusercontent.com/durrante/AVD/main/AIB/AVD_CONF_SysprepFix.ps1"
+                        "scriptUri": "https://stlcmaibuks001.blob.core.windows.net/azureimagebuilder/Scripts/AVD_CONF_SysprepFix.ps1"
                     },
                     {
                         "type": "PowerShell",
