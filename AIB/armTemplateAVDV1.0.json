@@ -148,7 +148,7 @@
                         "name": "DeleteCTemp",
                         "runElevated": true,
                         "inline": [
-                            "Remove-Item -Path 'C:\\Temp' -Recurse -Force",
+                            "Remove-Item -Path 'C:\\Temp' -Recurse -Force"
                         ]
                     },
                     {
@@ -156,7 +156,7 @@
                         "name": "DeletePublicShortcuts",
                         "runElevated": true,
                         "inline": [
-                            "Remove-Item -Path 'C:\\Users\\Public\\Desktop' -Recurse -Force",
+                            "Remove-Item -Path 'C:\\Users\\Public\\Desktop' -Recurse -Force"
                         ]
                     },     
                     {
