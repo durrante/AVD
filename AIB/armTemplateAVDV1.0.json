@@ -177,7 +177,7 @@
                     "galleryImageId": "/subscriptions/<subscriptionID>/resourceGroups/<rgName>/providers/Microsoft.Compute/galleries/<sharedImageGalName>/images/<imageDefName>",
                     "runOutputName": "<runOutputName>",
                     "artifactTags": {
-                        <DesiredTags>
+                        "<DesiredTags>"
                     },
                     "replicationRegions": [
                       "<regions>"
