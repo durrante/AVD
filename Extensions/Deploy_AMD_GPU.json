@@ -1,0 +1,17 @@
+{
+  "name": "myExtensionName",
+  "type": "extensions",
+  "location": "[resourceGroup().location]",
+  "apiVersion": "2015-06-15",
+  "dependsOn": [
+    "[concat('Microsoft.Compute/virtualMachines/', myVM)]"
+  ],
+  "properties": {
+    "publisher": "Microsoft.HpcCompute",
+    "type": "AmdGpuDriverWindows",
+    "typeHandlerVersion": "1.1",
+    "autoUpgradeMinorVersion": true,
+    "settings": {
+    }
+  }
+}
