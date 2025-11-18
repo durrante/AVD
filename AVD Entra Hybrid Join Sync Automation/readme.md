@@ -102,6 +102,10 @@ Add the service account to the **ADSyncOperators** local group:
 ```powershell
 Add-LocalGroupMember -Group 'ADSyncOperators' -Member 'YOURDOMAIN\svc-avd-entra-sync'
 ```
+#### Log on as a batch job
+Add the service account to the **Log on as a batch job** user right assignment on the Entra Connect Sync Server:
+
+<img width="432" height="368" alt="image" src="https://github.com/user-attachments/assets/5463c94d-71c7-4035-9c4c-e8432c67b050" />
 
 #### File System Permissions
 Grant the following permissions on the AAD Connect server:
