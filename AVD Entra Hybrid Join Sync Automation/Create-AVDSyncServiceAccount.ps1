@@ -35,7 +35,7 @@ Write-Host ""
 
 # Get the service accounts OU from user
 Write-Host "Please provide the Distinguished Name of the OU where service accounts are stored." -ForegroundColor Yellow
-Write-Host "Example: OU=Service Accounts,OU=Admin,DC=hhllp,DC=co,DC=uk" -ForegroundColor Gray
+Write-Host "Example: OU=Service Accounts,OU=Admin,DC=alexdu,DC=co,DC=uk" -ForegroundColor Gray
 Write-Host ""
 
 $serviceAccountOU = Read-Host "Service Account OU (Distinguished Name)"
