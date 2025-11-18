@@ -166,7 +166,7 @@ Write-Host "     • Add $AccountName" -ForegroundColor Gray
 Write-Host "     • Select 'Read all properties' for Computer objects" -ForegroundColor Gray
 Write-Host ""
 Write-Host "3. SCHEDULED TASK PERMISSIONS:" -ForegroundColor Yellow
-Write-Host "   - Log on as a batch job (automatically granted when creating scheduled task)" -ForegroundColor White
+Write-Host "   - Log on as a batch job permission via User Rights Assignment " -ForegroundColor White
 Write-Host ""
 Write-Host "4. FILE SYSTEM PERMISSIONS:" -ForegroundColor Yellow
 Write-Host "   - Read/Execute on C:\Scripts\AVD\" -ForegroundColor White
