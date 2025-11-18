@@ -55,7 +55,7 @@ $monitoringScriptContent = @'
 param()
 
 # Configuration
-$searchBase = "OU=Production,OU=Desktop,OU=Pooled,OU=Host Pools,OU=AVD,OU=Azure,DC=hhllp,DC=co,DC=uk"
+$searchBase = "OU=Production,OU=Desktop,OU=Pooled,OU=Host Pools,OU=AVD,OU=Azure,DC=alexdu,DC=co,DC=uk"
 $devicePrefix = "vm-sh-*"
 $minutesLookback = 5
 $replicationWaitSeconds = 30
