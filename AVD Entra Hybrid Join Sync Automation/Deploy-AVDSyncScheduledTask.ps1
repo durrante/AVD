@@ -55,7 +55,7 @@ $monitoringScriptContent = @'
 param()
 
 # Configuration
-$searchBase = "OU=Production,OU=Desktop,OU=Pooled,OU=Host Pools,OU=AVD,OU=Azure,DC=alexdu,DC=co,DC=uk"
+$searchBase = "OU=Production,OU=Desktop,OU=Pooled,OU=Host Pools,OU=AVD,OU=Azure,DC=hhllp,DC=co,DC=uk"
 $devicePrefix = "vm-sh-*"
 $minutesLookback = 5
 $replicationWaitSeconds = 30
@@ -111,19 +111,19 @@ try {
         
         $syncRequired = $false
         
-        foreach ($host in $sessionHosts) {
+        foreach ($sessionHost in $sessionHosts) {
             # Calculate age of the computer object
-            $createdAge = ([DateTime]::Now - $host.Created).TotalMinutes
+            $createdAge = ([DateTime]::Now - $sessionHost.Created).TotalMinutes
             
-            Write-LogEntry "Device: $($host.Name), Created: $($host.Created), Age: $([math]::Round($createdAge, 2)) minutes" -Level Info
+            Write-LogEntry "Device: $($sessionHost.Name), Created: $($sessionHost.Created), Age: $([math]::Round($createdAge, 2)) minutes" -Level Info
             
             # Verify it's within our threshold and truly new
             if ($createdAge -le ($minutesLookback + 1)) {
-                Write-LogEntry "Device $($host.Name) qualifies for sync (created $([math]::Round($createdAge, 2)) minutes ago)" -Level Info
+                Write-LogEntry "Device $($sessionHost.Name) qualifies for sync (created $([math]::Round($createdAge, 2)) minutes ago)" -Level Info
                 $syncRequired = $true
             }
             else {
-                Write-LogEntry "Device $($host.Name) is outside threshold (created $([math]::Round($createdAge, 2)) minutes ago)" -Level Warning
+                Write-LogEntry "Device $($sessionHost.Name) is outside threshold (created $([math]::Round($createdAge, 2)) minutes ago)" -Level Warning
             }
         }
         
@@ -246,7 +246,7 @@ Write-Host "`n====== Deployment Summary ======" -ForegroundColor Green
 Write-Host "Script Location: $monitoringScriptPath" -ForegroundColor White
 Write-Host "Log Location: C:\Scripts\AVD\Logs" -ForegroundColor White
 Write-Host "Scheduled Task: $taskName" -ForegroundColor White
-Write-Host "Monitored OU: OU=Production,OU=Desktop,OU=Pooled,OU=Host Pools,OU=AVD,OU=Azure,DC=hhllp,DC=co,DC=uk" -ForegroundColor White
+Write-Host "Monitored OU: OU=Production,OU=Desktop,OU=Pooled,OU=Host Pools,OU=AVD,OU=Azure,DC=alexdu,DC=co,DC=uk" -ForegroundColor White
 Write-Host "Device Pattern: vm-sh-*" -ForegroundColor White
 Write-Host "`nThe task will run every 5 minutes and check for new AVD session hosts." -ForegroundColor Yellow
 Write-Host "When detected, it will trigger an AAD Connect delta sync automatically." -ForegroundColor Yellow
